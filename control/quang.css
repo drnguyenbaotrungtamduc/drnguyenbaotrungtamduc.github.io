@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 11pt;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+}
+
+ /* Style for the row */
+ .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0; /* Add negative margin to offset column padding */
+}
+
+/* Style for the column */
+.col {
+    flex: 1;
+    padding: 1px; /* Add padding to separate columns */
+    box-sizing: border-box; /* Include padding in column width */
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 0;
+}
+
+.column-left {
+
+    flex: 1;
+    order: 2;
+    margin: 0px;
+}
+
+.column-right {
+    display: flex;
+    flex: 1;
+    order: 3;
+    padding-bottom: 10px;
+    overflow-y: auto;
+}
+
+img {
+    max-width: 100%; /* Set the maximum width to fit the parent container */
+    height: auto; /* Maintain the image's aspect ratio */
+  }
+
+.quang {
+    background-color: #00A4EF;
+    flex: 0;
+    margin: 0;
+}
+
+.div1 {
+    background-color: #215493;
+    color: white;
+    flex: 1;
+    margin: 0;
+    padding: 10px;
+}
+
+.div2, .div3, .div4, .div5 {
+    background-color: #3498DB;
+    flex: 1;
+    margin: 0;
+    border: 1px;
+    border-color: #1010d7;
+    padding: 10px;
+}
+
+.div2 {
+    background-color: #4285F4;
+}
+
+.div3 {
+    background-color: #34A853;
+}
+
+.div4 {
+    background-color: #FBBC05;
+}
+
+.div5 {
+    background-color: #EA4335;
+}
+
+.div6 {
+    background-color: #f3cdde;
+    flex: 1;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Define column widths for different screen sizes */
+@media (min-width: 768px) {
+
+    .column-right {
+        flex: 0 0 68%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+}
