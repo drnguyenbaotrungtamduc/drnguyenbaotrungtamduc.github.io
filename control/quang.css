@@ -50,7 +50,7 @@ img {
   }
 
 .quang {
-    background-color: #034429;
+    background-color: #029135;
     margin: 0;
 }
 
@@ -67,18 +67,15 @@ img {
     padding-left: 10px;
 }
 
-.chonBenhNhan {
+.chonHoSo {
     color: white;
     padding: 10px;
     text-align: center;
 }
 
 .div2_tomTatVD, .div3_thuocSD, .div4_danhSachCLS1, .div5_danhSachCLS2 {
-    background-color: #3498DB;
     flex: 1;
     margin: 0;
-    border: 1px;
-    border-color: #1010d7;
     padding: 5px;
 }
 
@@ -89,15 +86,16 @@ img {
 
 .div3_thuocSD {
     background-color: #F7ED2B;
+    color: #034429;
 }
 
 .div4_danhSachCLS1 {
     background-color: #033692;
-    color: white;
+    color: #CCFFF5;
 }
 
 .div5_danhSachCLS2 {
-    background-color: #029135;
+    background-color: #034429;
     color: white;
 }
 
