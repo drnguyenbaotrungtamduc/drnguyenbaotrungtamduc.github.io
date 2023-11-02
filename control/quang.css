@@ -37,9 +37,11 @@ body {
     display: flex;
     flex: 1;
     order: 3;
-    padding-bottom: 0.5px;
+    padding: 0.5px;
+    overflow-y: scroll;
     max-height: 100vh;
     overflow-y: scroll;
+    max-height: 100vh;
 }
 
 img {
@@ -48,56 +50,70 @@ img {
   }
 
 .quang {
-    background-color: #00A4EF;
-    flex: 0;
+    background-color: #034429;
     margin: 0;
 }
 
-.div1 {
-    background-color: #215493;
+.div1_phongKham {
+    background-color: #03326c;
     color: white;
-    flex: 1;
     margin: 0;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
 }
 
-.div2, .div3, .div4, .div5 {
+.thongTinBS {
+    padding-left: 10px;
+}
+
+.chonBenhNhan {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.div2_tomTatVD, .div3_thuocSD, .div4_danhSachCLS1, .div5_danhSachCLS2 {
     background-color: #3498DB;
     flex: 1;
     margin: 0;
     border: 1px;
     border-color: #1010d7;
-    padding: 10px;
+    padding: 5px;
 }
 
-.div2 {
+.div2_tomTatVD {
     background-color: #4285F4;
 }
 
-.div3 {
+.div3_thuocSD {
     background-color: #34A853;
 }
 
-.div4 {
+.div4_danhSachCLS1 {
     background-color: #FBBC05;
 }
 
-.div5 {
+.div5_danhSachCLS2 {
     background-color: #EA4335;
 }
 
-.div6 {
+.div6_ketQuaXN {
     background-color: #f3cdde;
     flex: 1;
     margin: 0px;
     padding: 0px;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Define column widths for different screen sizes */
 @media (min-width: 768px) {
 
     .column-right {
-        flex: 0 0 68%;
+        flex: 0 0 63%;
     }
 }
 
