@@ -2,7 +2,7 @@ function hienThiNoiDung() {
 
 // JavaScript to handle content selection
 const chonNoiDung = document.getElementById('chonNoiDung');
-const contentDivs = document.querySelectorAll('.thongTinBN, .div6_ketQuaXN');
+const contentDivs = document.querySelectorAll('.thongTinHoSo, .div6_ketQuaXN');
 
 // Hide all content divs when the page loads
 contentDivs.forEach(div => {
