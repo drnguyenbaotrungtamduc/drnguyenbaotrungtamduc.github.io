@@ -25,7 +25,14 @@ const chonNoiDung2 = chonNoiDung.value;
 // Call the function on page load
 window.onload = hienThiNoiDung;
 
-
+function checkPassword() {
+    var password = document.getElementById("password").value;
+    if (password === "anh Quang") {
+        window.location.href = "hoSoSK.html";
+    } else {
+        alert("Không biết password thì hỏi anh Quang nha, đừng bấm lung tung.");
+    }
+}
 
 function displayParagraph(id) {
     const element = document.getElementById(id); // Select the specific <p> element with the given ID
