@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="./control/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./control/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./control/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./control/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./control/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="./control/quang.css">
+    <script src="./control/quang.js"></script>
+    </link>
+
+    <title>BS Nguyễn Bảo Trung</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="column-left">
+            <div class="quang">
+                <div class="div1_phongKham">
+                    <div class="hinhBS">
+                        <img src="./control/DrTrung.png" alt="Hinh BS Trung" width="77px">
+                    </div>
+                    <div class="thongTinBS">
+                        <h3>Bác sĩ Nguyễn Bảo Trung</h3>
+                        <p>1508/15/10 Lê Văn Lương, Nhà Bè, TPHCM | +84 937 530 356</p>
+                        <p>Giờ làm việc: 16h - 20h T2 - T7; 7h - 10h CN</p>
+                    </div>
+                </div>
+                <div class="chonHoSo">
+                    <label for="chonNoiDung">Hồ sơ sức khỏe: </label>
+                    <select id="chonNoiDung" onchange="hienThiNoiDung()">
+                        <option value="bePrepared" selected>Chọn một hồ sơ để xem</option>
+                        <option value="ba">Lương HS, Nam, 1954</option>
+                        <option value="me">Trần TL, Nữ, 1956</option>
+                    </select>
+                </div>
+            </div>
+            <div class="thongTinHoSo" id="thongTinBa">
+                <div class="row">
+                    <div class="div2_tomTatVD">
+                        Div 2 - Tóm tắt vấn đề
+                        <p>
+
+                        </p>
+                        <br>
+                    </div>
+                    <div class="div3_thuocSD">
+                        Div 3 - ℞ Rx Các thuốc đang sử dụng
+                        <p>∑♫♪♦♥♣♠♂♀☼☻☺</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="div4_danhSachCLS1">
+                        Div 4 - Cận lâm sàng
+                        <p>[+] Điện tâm đồ</p>
+                        <p>[+] Siêu âm tim</p>
+                    </div>
+                    <div class="div5_danhSachCLS2">
+                        Div 5 -
+                        <p>[+] Các chỉ số huyết học</p>
+                        <p>[-] Xét nghiệm sinh hóa máu</p>
+                        <p> 2023-10-02</p>
+                        <p> 2022-09-13</p>
+                        <p> 2022-03-11</p>
+                        <p>[+] Tổng phân tích nước tiểu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thongTinHoSo" id="thongTinMe">
+                <div>
+                    <p id="div2_tomTatVD_me" class="custom-text">[to be continued] from Excel</p>
+                    <script>displayParagraph("div2_tomTatVD_me");</script>
+                </div>
+            </div>
+            <div class="thongTinHoSo" id="thongTinWaited">
+                <div class="row">
+                    <div class="div2_tomTatVD">
+                        Tóm tắt vấn đề
+                    </div>
+                    <div class="div3_thuocSD">
+                        Rx Các thuốc đang sử dụng
+                        <br><br><br><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="div4_danhSachCLS1">
+                        Danh sách Cận lâm sàng
+                        <br><br><br><br><br><br><br><br>
+                    </div>
+                    <div class="div5_danhSachCLS2">
+                        Danh sách Cận lâm sàng (tiếp theo)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column-right">
+            <div class="div6_ketQuaXN" id="ketQuaClsBa">Div 6 - Nơi hiện kết quả xét nghiệm
+                <img src="./ketQuaCLS/20210331_TTL_xQuangNgucThang.jpg" alt="20210331_TTL_xQuangNgucThang">
+            </div>
+            <div class="div6_ketQuaXN" id="ketQuaClsMe">
+                KQ của Mẹ
+            </div>
+            <div class="div6_ketQuaXN" id="ketQuaClsWaited">
+                Kết quả Cận Lâm Sàng Mẫu
+                <br>
+                <img src="./ketQuaCLS/Sample Echography.gif" alt="Mẫu siêu âm">
+                <img src="./ketQuaCLS/Sample Results.png" alt="Mẫu kết quả ">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
