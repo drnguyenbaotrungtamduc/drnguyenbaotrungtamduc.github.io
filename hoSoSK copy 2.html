@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="./control/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./control/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./control/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./control/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./control/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="./control/quang.css">
+    <script src="./control/quang_copy.js"></script>
+    </link>
+
+    <title>BS Nguyễn Bảo Trung</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="column-left">
+            <div class="quang">
+                <div class="div1_phongKham">
+                    <div class="hinhBS">
+                        <img src="./control/DrTrung.png" alt="Hinh BS Trung" width="77px">
+                    </div>
+                    <div class="thongTinBS">
+                        <h3>Bác sĩ Nguyễn Bảo Trung</h3>
+                        <p>1508/15/10 Lê Văn Lương, Nhà Bè, TPHCM | +84 937 530 356</p>
+                        <p>Giờ làm việc: 16h - 20h T2 - T7; 7h - 10h CN</p>
+                    </div>
+                </div>
+                <div class="chonHoSo">
+                    <label for="chonNoiDung">Hồ sơ sức khỏe: </label>
+                    <select id="chonNoiDung" onchange="hienThiNoiDung()">
+                        <option value="bePrepared" selected>Chọn một hồ sơ để xem</option>
+                        <option value="ba">Lương HS, Nam, 1954</option>
+                        <option value="me">Trần TL, Nữ, 1956</option>
+                    </select>
+                </div>
+            </div>
+            <div class="thongTinHoSo" id="thongTinBa">
+                <div class="row">
+                    <div class="div2_tomTatVD">
+                        <p>
+                            Tóm tắt vấn đề
+                        </p>
+                        <br>
+                    </div>
+                    <div class="div3_thuocSD">
+                        <p>
+                            ℞ Các thuốc đang sử dụng:
+                        </p>
+                        <ul>
+                            <li><a>Valsartan 80mg ngày 1 viên</a></li>
+                            <li><a>Amlodipine 5mg ngày 1 viên</a></li>
+                            <li><a>Rosuvastatin 10mg ngày 1 viên</a></li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="div4_danhSachCLS1">
+                        <div id="linkList">
+                            <ul>
+                                <li>
+                                    <span class="collapse-toggle">[+]</span>
+                                    <a>Điện tâm đồ</a>
+                                    <ul class="nested">
+                                        <li><a href="#" onclick="changeContent('./ketQuaCLS/ketQuaCLS_Ba/20210331_LHS_ECG.png')">2021_03 ECG sóng</a></li>
+                                        <li><a href="#" onclick="changeContent('./ketQuaCLS/ketQuaCLS_Ba/20210331_LHS_ECGCombined.pdf#zoom=110')">2021_03 ECG đọc KQ</a></li>
+
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span class="collapse-toggle">[+]</span>
+                                    <a>X quang ngực thẳng</a>
+                                    <ul class="nested">
+                                        <li><a href="#" onclick="changeContent('./ketQuaCLS/ketQuaCLS_Ba/20231002_LHS_xQuangNgucThang.jpg')">img</a></li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span class="collapse-toggle">[+]</span>
+                                    <a>Siêu âm tim</a>
+                                    <ul class="nested">
+                                        <li><a href="#" onclick="changeContent('./ketQuaCLS/ketQuaCLS_Ba/20210331_LHS_sieuAmTimCombined.pdf#zoom=110')">2021_03 SÂ Tim</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="div5_danhSachCLS2">
+                        <ul>
+                            <li>
+                                <span class="collapse-toggle">[+]</span>
+                                <a>Xét nghiệm Tế bào máu, Sinh hóa máu, TPTNT</a>
+                                <ul class="nested">
+                                    <li><a href="#" onclick="changeContent('./ketQuaCLS/ketQuaCLS_Ba/20210331_LHS_xetNghiemHuyetHocSinhHoaMauNuocTieu.pdf#zoom=110')">2021_03 XN máu, nước tiểu</a></li>
+
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                <span class="collapse-toggle">[+]</span>
+                                <a>Siêu âm bụng tổng quát</a>
+                                <ul class="nested">
+                                    <li><a href="#" onclick="changeContent('./ketQuaCLS/ketQuaCLS_Ba/20210331_LHS_sieuAmBungCombined.pdf#zoom=110')">2021_03 SÂ bụng</a></li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                <span class="collapse-toggle">[+]</span>
+                                <a>Other test</a>
+                                <ul class="nested">
+                                    <li><a href="#">place holder</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="thongTinHoSo" id="thongTinMe">
+                <div>
+                    <p id="div2_tomTatVD_me" class="custom-text">[to be continued] from Excel</p>
+                    <script>displayParagraph("div2_tomTatVD_me");</script>
+                </div>
+            </div>
+            <div class="thongTinHoSo" id="thongTinWaited">
+                <div class="row">
+                    <div class="div2_tomTatVD">
+                        Tóm tắt vấn đề
+                    </div>
+                    <div class="div3_thuocSD">
+                        Rx Các thuốc đang sử dụng
+                        <br><br><br><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="div4_danhSachCLS1">
+                        Danh sách Cận lâm sàng
+                        <br><br><br><br><br><br><br><br>
+                    </div>
+                    <div class="div5_danhSachCLS2">
+                        Danh sách Cận lâm sàng (tiếp theo)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column-right">
+            <div class="div6_ketQuaXN" id="ketQuaClsBa">
+                <iframe id="iframe" src="" with="100%" height="100vh"></iframe>
+                <img id="image" src="" alt="Kết quả cận lâm sàng" style="display: none; width: 100%; height: auto;">
+            </div>
+            <div class="div6_ketQuaXN" id="ketQuaClsMe">
+
+            </div>
+            <div class="div6_ketQuaXN" id="ketQuaClsWaited">
+                Kết quả Cận Lâm Sàng Mẫu
+
+            </div>
+        </div>
+    </div>
+    <script>
+        setupCollapsibleList();
+    </script>
+</body>
+
+</html>
