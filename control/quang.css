@@ -6,6 +6,7 @@ body {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
 }
 
  /* Style for the row */
@@ -21,13 +22,12 @@ body {
     padding: 1px; /* Add padding to separate columns */
     box-sizing: border-box; /* Include padding in column width */
     background-color: #f2f2f2;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     text-align: center;
     margin: 0;
 }
 
 .column-left {
-
     flex: 1;
     order: 2;
     margin: 0px;
@@ -40,13 +40,14 @@ body {
     padding: 0.5px;
     overflow-y: scroll;
     max-height: 100vh;
-    overflow-y: scroll;
-    max-height: 100vh;
 }
 
 img {
     max-width: 100%; /* Set the maximum width to fit the parent container */
-    height: auto; /* Maintain the image's aspect ratio */
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100vh;
   }
 
 .quang {
@@ -99,17 +100,66 @@ img {
     color: white;
 }
 
+.div4_danhSachCLS1 a, .div5_danhSachCLS2 a {
+    color: inherit; /* Inherit the color from the parent div */
+    text-decoration: none; /* Optional: Remove underline */
+} 
+
 .div6_ketQuaXN {
     background-color: #f3cdde;
     flex: 1;
     margin: 0px;
     padding: 0px;
+    height: 100vh;
+    display: grid;
+}
+
+iframe {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+img[src$="#fit"] {
+    width: 100vw;
+    height: auto;
+    max-width: none;
+    max-height: 100vh;
+    object-fit: contain;
+}
+
+#target {
+    width: 100px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: auto;
+    resize: both;
+    position: relative;
+    z-index: 2;
 }
 
 .hidden {
     display: none;
 }
 
+.nested {
+    display: none;
+}
+
+.collapse-toggle {
+    cursor: pointer;
+}
+
+ul {
+    padding-inline-start: 15px; /* Adjust the value as needed */
+}
+
+li {
+    text-indent: -5px; /* Adjust the value as needed */
+}
+  
 /* Define column widths for different screen sizes */
 @media (min-width: 845px) {
 
