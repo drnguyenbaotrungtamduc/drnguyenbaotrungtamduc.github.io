@@ -28,7 +28,7 @@ function checkLeMot() {
     if (leMot === "DrTrung2023") {
         window.location.href = "hoSoSK.html";
     } else {
-        alert("");
+        alert("Quên mật khẩu thì hỏi Dr Quang");
     }
 }
 
