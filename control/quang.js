@@ -51,6 +51,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function initializeAdobeDCView() {
+    document.addEventListener("adobe_dc_view_sdk.ready", function () {
+      const pdfContainers = document.querySelectorAll(".div6_ketQuaXN");
+  
+      pdfContainers.forEach(function (container) {
+        const iframe = container.querySelector(".pdf-iframe");
+        const clientId = "ab688cc6f974420a9c98078418b16ee3";
+  
+        const adobeDCView = new AdobeDC.View({ clientId, divId: container });
+        const pdfUrl = iframe.src;
+  
+        adobeDCView.previewFile(
+          {
+            content: { location: { url: pdfUrl } },
+            metaData: { fileName: pdfUrl }
+          },
+          { embedMode: "SIZED_CONTAINER", showFullScreen: true }
+        );
+      });
+    });
+  }
+
 // function to select the Test to display in the right column [iframe]
 // function changeContent(contentURL) {
     //const iframe = document.getElementById('iframe');
