@@ -22,13 +22,13 @@ const chonNoiDung2 = chonNoiDung.value;
 // Call the function on page load
 window.onload = hienThiNoiDung;
 
-// function to check password
-function checkPassword() {
-    var password = document.getElementById("password").value;
-    if (password === "DrTrung2023") {
+// function to leMot
+function checkLeMot() {
+    var leMot = document.getElementById("leMot").value;
+    if (leMot === "DrTrung2023") {
         window.location.href = "hoSoSK.html";
     } else {
-        alert("Hỏi Dr Quang nếu bạn quên mật khẩu");
+        alert("");
     }
 }
 
