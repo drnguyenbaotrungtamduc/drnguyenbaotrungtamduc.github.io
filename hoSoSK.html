@@ -339,19 +339,26 @@
 
         <div class="column-right">
             <div class="div6_ketQuaXN" id="ketQuaClsBa">
-                <iframe name="iframe_qBa" scrolling="yes"></iframe>
+                <iframe class="pdf-iframe" name="iframe_qBa" scrolling="yes"></iframe>
             </div>
             <div class="div6_ketQuaXN" id="ketQuaClsMe">
-                <iframe name="iframe_qMe" scrolling="yes"></iframe>
+                <iframe class="pdf-iframe" name="iframe_qMe" scrolling="yes"></iframe>
             </div>
             <div class="div6_ketQuaXN" id="ketQuaClsWaited">
                 Kết quả Cận Lâm Sàng
             </div>
         </div>
     </div>
+</body>
+<footer>
     <script>
         setupCollapsibleList();
     </script>
-</body>
-
+    <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+          initializeAdobeDCView();
+        });
+      </script>
+</footer>
 </html>
