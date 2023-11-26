@@ -161,14 +161,14 @@ li {
 }
   
 /* Define column widths for different screen sizes */
-@media (min-width: 845px) {
+@media (min-width: 741px) {
 
     .column-right {
         flex: 0 0 63%;
     }
 }
 
-@media (max-width: 844px) {
+@media (max-width: 740px) {
     .container {
         flex-direction: column;
     }
