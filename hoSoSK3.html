@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="./control/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./control/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./control/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./control/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./control/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="./control/quang.css">
+    <script src="./control/quang.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+    </link>
+
+    <title>BS Nguyễn Bảo Trung</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="column-left">
+            <div class="quang">
+                <div class="div1_phongKham">
+                    <div class="hinhBS">
+                        <img src="./control/DrTrung.png" alt="Hinh BS Trung" width="77px">
+                    </div>
+                    <div class="thongTinBS">
+                        <h3>Bác sĩ Nguyễn Bảo Trung</h3>
+                        <p>1508/15/10 Lê Văn Lương, Nhà Bè, TPHCM | +84 937 530 356</p>
+                        <p>Giờ làm việc: 16h - 20h T2 - T7; 7h - 10h CN</p>
+                    </div>
+                </div>
+                <div class="chonHoSo">
+                    <label for="chonNoiDung">Hồ sơ sức khỏe: </label>
+                    <select id="chonNoiDung" onchange="hienThiNoiDung()">
+                        <option value="bePrepared" selected>Chọn một hồ sơ để xem</option>
+                        <option value="ba">Lương HS, Nam, 1954</option>
+                        <option value="me">Trần TL, Nữ, 1956</option>
+                    </select>
+                </div>
+            </div>
+            <div class="thongTinHoSo" id="thongTinBa">
+                <div class="row">
+                    <div class="div2_tomTatVD">
+                        <h4>Tóm tắt vấn đề</h4>
+                        <p>
+                            1. Tăng huyết áp <br>
+                            2. Bệnh mạch vành mạn (?) <br>
+                            3. TD hamartoma đường mật trong gan <br>
+                            4. Tiền căn viêm tụy cấp (T8-2020, do sỏi), viêm túi mật cấp (cuối năm 2020, đã cắt) <br>
+                            5. Thoái hóa khớp gối 2 bên
+                        </p>
+                        <br>
+                    </div>
+                    <div class="div3_thuocSD">
+                        <h4>
+                            ℞ Các thuốc đang sử dụng:
+                        </h4>
+                        <ul>
+                            <li><a>Valsartan 80mg ngày 1 viên</a></li>
+                            <li><a>Amlodipine 5mg ngày 1 viên</a></li>
+                            <li><a>Rosuvastatin 10mg ngày 1 viên</a></li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="div4_danhSachCLS1">
+                        <div id="linkList">
+                            <ul>
+                                <li>
+                                    <span class="collapse-toggle">[+]</span>
+                                    <a>Điện tâm đồ</a>
+                                    <ul class="nested">
+                                        <li><a href="./ketQuaCLS/01baFrame/20231002_LHS_ECG.html"
+                                                target="iframe_qBa">2023_10_02_ECG</a></li>
+                                        <li><a href="./ketQuaCLS/01baFrame/20220305_LHS_ECG.html"
+                                                target="iframe_qBa">2022_03_05_ECG</a></li>
+                                        <li><a href="./ketQuaCLS/01baFrame/20210331_LHS_ECG.html"
+                                                target="iframe_qBa">2021_03_31_ECG</a></li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span class="collapse-toggle">[+]</span>
+                                    <a>Siêu âm tim</a>
+                                    <ul class="nested">
+                                        <li><a href="./ketQuaCLS/01baFrame/20231002_LHS_SAT.html"
+                                                target="iframe_qBa">2023_10_02_SÂ tim</a></li>
+                                        <li><a href="./ketQuaCLS/01baFrame/20220305_LHS_SAT.html"
+                                                target="iframe_qBa">2022_03_05_SÂ tim</a></li>
+                                        <li><a href="./ketQuaCLS/01baFrame/20210331_LHS_SAT.html"
+                                                target="iframe_qBa">2021_03_31_SÂ tim</a></li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span class="collapse-toggle">[+]</span>
+                                    <a>X quang ngực thẳng</a>
+                                    <ul class="nested">
+                                        <li><a href="./ketQuaCLS/01baFrame/20231002_LHS_NXQ.html"
+                                                target="iframe_qBa">2023_10_02_XQ ngực</a></li>
+                                        <li><a href="./ketQuaCLS/01baFrame/20210331_LHS_NXQ.html"
+                                                target="iframe_qBa">2021_03_31_XQ ngực</a></li>
+                                    </ul>
+                                </li>
+                                <br>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="div5_danhSachCLS2">
+                        <ul>
+                            <li>
+                                <span class="collapse-toggle">[+]</span>
+                                <a>Xét nghiệm Tế bào máu, Sinh hóa máu, TPTNT</a>
+                                <ul class="nested">
+                                    <li><a href="./ketQuaCLS/01baFrame/20231002_LHS_xNg.html"
+                                            target="iframe_qBa">2023_10_02_XN</a></li>
+                                    <li><a href="./ketQuaCLS/01baFrame/20220305_LHS_xNg.html"
+                                            target="iframe_qBa">2022_03_05_XN</a></li>
+                                    <li><a href="./ketQuaCLS/01baFrame/20210331_LHS_xNg.html"
+                                            target="iframe_qBa">2021_03_31_XN</a></li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                <span class="collapse-toggle">[+]</span>
+                                <a>Siêu âm bụng tổng quát</a>
+                                <ul class="nested">
+                                    <li><a href="./ketQuaCLS/01baFrame/20231002_LHS_SAB.html"
+                                            target="iframe_qBa">2023_10_02_SÂ bụng</a></li>
+                                    <li><a href="./ketQuaCLS/01baFrame/20220305_LHS_SAB.html"
+                                            target="iframe_qBa">2022_03_05_SÂ bụng</a></li>
+                                    <li><a href="./ketQuaCLS/01baFrame/20210331_LHS_SAB.html"
+                                            target="iframe_qBa">2021_03_31_SÂ bụng</a></li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                <span class="collapse-toggle">[+]</span>
+                                <a>Khớp gối 2 bên</a>
+                                <ul class="nested">
+                                    <li><a href="./ketQuaCLS/01baFrame/20231002_LHS_KXQ.html"
+                                            target="iframe_qBa">2023_10_02_XQ khớp gối</a></li>
+                                    <li><a href="./ketQuaCLS/01baFrame/20220305_LHS_KXQ.html"
+                                            target="iframe_qBa">2022_03_05_XQ khớp gối</a></li>
+                                    <li><a href="./ketQuaCLS/01baFrame/20220305_LHS_gSA.html"
+                                            target="iframe_qBa">2021_03_31_SÂ khớp gối</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="thongTinHoSo" id="thongTinMe">
+                <div class="row">
+                    <div class="div2_tomTatVD">
+                        <h4>Tóm tắt vấn đề</h4>
+                        <p>
+                            1. Bệnh mạch vành mạn (?) <br>
+                            2. TD tăng huyết áp (?) <br>
+                            3. Nốt đơn ở phổi dang theo dõi bằng CT 3 -6 - 12 tháng <br>
+                            4. Nhân giáp ACR TI-RADS 4(12x14mm) cận ngưỡng sinh thiết. Đã từng làm FNA trước đây (sẽ bổ
+                            sung sau) <br>
+                            5. Nang nhỏ vú BI RADS 2 <br>
+                            6. Thoái hóa khớp gối T
+                        </p>
+                        <br>
+                    </div>
+                    <div class="div3_thuocSD">
+                        <h4>
+                            ℞ Các thuốc đang sử dụng:
+                        </h4>
+                        <ul>
+                            <li><a>Clopidogrel 75mg ngày 1 viên</a></li>
+                            <li><a>Rosuvastatin 10mg ngày 1 viên</a></li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="div4_danhSachCLS1">
+                        <div id="linkList">
+                            <ul>
+                                <li>
+                                    <span class="collapse-toggle">[+]</span>
+                                    <a>Điện tâm đồ</a>
+                                    <ul class="nested">
+                                        <li><a href="./ketQuaCLS/02meFrame/20231002_TTL_ECG.html"
+                                                target="iframe_qMe">2023_10_02_ECG</a></li>
+                                        <li><a href="./ketQuaCLS/02meFrame/20220305_TTL_ECG.html"
+                                                target="iframe_qMe">2022_03_05_ECG</a></li>
+                                        <li><a href="./ketQuaCLS/02meFrame/20210331_TTL_ECG.html"
+                                                target="iframe_qMe">2021_03_31_ECG</a></li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span class="collapse-toggle">[+]</span>
+                                    <a>Siêu âm tim</a>
+                                    <ul class="nested">
+                                        <li><a href="./ketQuaCLS/02meFrame/20231002_TTL_SAT.html"
+                                                target="iframe_qMe">2023_10_02_SÂ tim</a></li>
+                                        <li><a href="./ketQuaCLS/02meFrame/20220910_TTL_SAT.html"
+                                                target="iframe_qMe">2022_09_10_SÂ tim</a></li>
+                                        <li><a href="./ketQuaCLS/02meFrame/20220305_TTL_SAT.html"
+                                                target="iframe_qMe">2022_03_05_SÂ tim</a></li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span class="collapse-toggle">[+]</span>
+                                    <a>CT mạch vành + CT ngực</a>
+                                    <ul class="nested">
+                                        <li><a href="./ketQuaCLS/02meFrame/20220305_TTL_ctV.html"
+                                                target="iframe_qMe">2022_03_05_CT mạch vành</a></li>
+                                        <li><a href="./ketQuaCLS/02meFrame/20231002_TTL_ctN.html"
+                                                target="iframe_qMe">2023_10_02_CT ngực</a></li>
+                                        <li><a href="./ketQuaCLS/02meFrame/20221213_TTL_ctN.html"
+                                                target="iframe_qMe">2022_12_13_CT ngực</a></li>
+                                        <li><a href="./ketQuaCLS/02meFrame/20220913_TTL_ctN.html"
+                                                target="iframe_qMe">2022_09_13_CT ngực</a></li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span class="collapse-toggle">[+]</span>
+                                    <a>Siêu âm tuyến giáp</a>
+                                    <ul class="nested">
+                                        <li><a href="./ketQuaCLS/02meFrame/20231002_TTL_SAG.html"
+                                                target="iframe_qMe">2023_10_02_SÂ tuyến giáp</a></li>
+                                        <li><a href="./ketQuaCLS/02meFrame/20220305_TTL_SAG.html"
+                                                target="iframe_qMe">2022_03_05_SÂ tuyến giáp</a></li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <span class="collapse-toggle">[+]</span>
+                                    <a>X quang ngực thẳng</a>
+                                    <ul class="nested">
+                                        <li><a href="./ketQuaCLS/02meFrame/20221022_TTL_NXQ.html"
+                                                target="iframe_qMe">2022_10_22_XQ ngực</a></li>
+                                        <li><a href="./ketQuaCLS/02meFrame/20220305_TTL_NXQ.html"
+                                                target="iframe_qMe">2022_03_05_XQ ngực</a></li>
+                                        <li><a href="./ketQuaCLS/02meFrame/20210331_TTL_NXQ.html"
+                                                target="iframe_qMe">2021_03_31_XQ ngực</a></li>
+                                    </ul>
+                                </li>
+                                <br>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="div5_danhSachCLS2">
+                        <ul>
+                            <li>
+                                <span class="collapse-toggle">[+]</span>
+                                <a>Nhũ ảnh & siêu âm</a>
+                                <ul class="nested">
+                                    <li><a href="./ketQuaCLS/02meFrame/20231002_TTL_nhu.html"
+                                            target="iframe_qMe">2023_10_02_Nhũ ảnh</a></li>
+                                    <li><a href="./ketQuaCLS/02meFrame/20231002_TTL_SAV.html"
+                                            target="iframe_qMe">2023_10_02_SÂ nhũ</a></li>
+                                    <li><a href="./ketQuaCLS/02meFrame/20220305_TTL_nhu.html"
+                                            target="iframe_qMe">2022_03_05_Nhũ ảnh</a></li>
+                                    <li><a href="./ketQuaCLS/02meFrame/20220305_TTL_SAV.html"
+                                            target="iframe_qMe">2022_03_05_SÂ nhũ</a></li>
+                                    <li><a href="./ketQuaCLS/02meFrame/20210331_TTL_nhu.html"
+                                            target="iframe_qMe">2021_03_31_Nhũ ảnh</a></li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                <span class="collapse-toggle">[+]</span>
+                                <a>Xét nghiệm Tế bào máu, Sinh hóa máu, TPTNT</a>
+                                <ul class="nested">
+                                    <li><a href="./ketQuaCLS/02meFrame/20231002_TTL_xNg.html"
+                                            target="iframe_qMe">2023_10_02_XN</a></li>
+                                    <li><a href="./ketQuaCLS/02meFrame/20221022_TTL_xNg.html"
+                                            target="iframe_qMe">2022_10_22_XN</a></li>
+                                    <li><a href="./ketQuaCLS/02meFrame/20220305_TTL_xNg.html"
+                                            target="iframe_qMe">2022_03_05_XN</a></li>
+                                    <li><a href="./ketQuaCLS/02meFrame/20210331_TTL_xNg.html"
+                                            target="iframe_qMe">2021_03_31_XN</a></li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                <span class="collapse-toggle">[+]</span>
+                                <a>Siêu âm bụng tổng quát</a>
+                                <ul class="nested">
+                                    <li><a href="./ketQuaCLS/02meFrame/20231002_TTL_SAB.html"
+                                            target="iframe_qMe">2023_10_02_SÂ bụng</a></li>
+                                    <li><a href="./ketQuaCLS/02meFrame/20221022_TTL_SAB.html"
+                                            target="iframe_qMe">2022_10_22_SÂ bụng</a></li>
+                                    <li><a href="./ketQuaCLS/02meFrame/20220305_TTL_SAB.html"
+                                            target="iframe_qMe">2022_03_05_SÂ bụng</a></li>
+                                    <li><a href="./ketQuaCLS/02meFrame/20210331_TTL_SAB.html"
+                                            target="iframe_qMe">2021_03_31_SÂ bụng</a></li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                <span class="collapse-toggle">[+]</span>
+                                <a>Khớp gối T</a>
+                                <ul class="nested">
+                                    <li><a href="./ketQuaCLS/02meFrame/20231002_TTL_KXQ.html"
+                                            target="iframe_qMe">2023_10_02_XQ khớp gối T</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="thongTinHoSo" id="thongTinWaited">
+                <div class="row">
+                    <div class="div2_tomTatVD">
+                        Tóm tắt vấn đề
+                    </div>
+                    <div class="div3_thuocSD">
+                        Rx Các thuốc đang sử dụng
+                        <br><br><br><br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="div4_danhSachCLS1">
+                        Danh sách Cận lâm sàng
+                        <br><br><br><br><br><br><br><br>
+                    </div>
+                    <div class="div5_danhSachCLS2">
+                        Danh sách Cận lâm sàng (tiếp theo)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column-right">
+            <div class="div6_ketQuaXN" id="ketQuaClsBa">
+                <iframe class="iframe-images" name="iframe_qBa" scrolling="yes"></iframe>
+            </div>
+            <div class="div6_ketQuaXN" id="ketQuaClsMe">
+                <iframe class="iframe-images" name="iframe_qMe" scrolling="yes"></iframe>
+            </div>
+            <div class="div6_ketQuaXN" id="ketQuaClsWaited">
+                Kết quả Cận Lâm Sàng
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+</footer>
+</html>
