@@ -26,7 +26,7 @@ window.onload = hienThiNoiDung;
 function checkLeMot() {
     var leMot = document.getElementById("leMot").value;
     if (leMot === "DrTrung2023") {
-        window.location.href = "hoSoSK.html";
+        window.location.href = "hoSoSK3.html";
     } else {
         alert("Quên mật khẩu thì hỏi Dr Quang");
     }
