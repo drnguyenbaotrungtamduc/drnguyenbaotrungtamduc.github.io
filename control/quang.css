@@ -159,7 +159,14 @@ ul {
 li {
     text-indent: -5px; /* Adjust the value as needed */
 }
-  
+
+.iframe-images img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Define column widths for different screen sizes */
 @media (min-width: 741px) {
 
@@ -171,6 +178,7 @@ li {
 @media (max-width: 740px) {
     .container {
         flex-direction: column;
+        height: 100%;
     }
 
     .row {
